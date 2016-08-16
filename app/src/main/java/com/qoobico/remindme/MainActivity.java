@@ -1,18 +1,18 @@
 package com.qoobico.remindme;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Toolbar;
-
 import alpha.mess.remindme.R;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.AppDefault);
         super.onCreate(savedInstanceState);
 
         initToolbar();
